@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Triangle Area Calculator</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #aeb6bf;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        h1 {
+            color: #111;
+            font-size: 24px;
+            margin: 20px 0;
+        }
+
+        form {
+            background-color: #d6dbdf;
+            border: 1px solid #99a3a4;
+            border-radius: 5px;
+            padding: 20px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            max-width: 400px;
+        }
+
+        label {
+            display: block;
+            margin: 10px 0;
+        }
+
+        input {
+            width: 75%;
+            padding: 10px;
+            margin: 5px 0;
+            border: 1px solid #99a3a4;
+            border-radius: 5px;
+        }
+
+        input[type="submit"] {
+            background-color: #5d6d7e;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            width: auto;
+            cursor: pointer;
+        }
+
+        button {
+            background-color: #5d6d7e;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            width: auto;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+
+        p {
+            text-align: center;
+            margin: 20px 0;
+        }
+    </style>
+</head>
+<body>
+    <h1>Triangle Area Calculator</h1>
+    <form method="post" action="/triangle">
+        <label for="base">Base:</label>
+        <input type="number" id="base" name="base">
+        
+        <label for="height">Height:</label>
+        <input type="number" id="height" name="height">
+
+        <input type="submit" value="Calculate Area">
+        <button type="button" onclick="window.location.href='/'">Exit</button>
+    </form>
+    
+    {% if area %}
+    <p>Area of the triangle is: {{ area }}</p>
+    {% endif %}
+</body>
+</html>

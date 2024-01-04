@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Circle Area Calculator</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #aeb6bf;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        h1 {
+            text-align: center;
+            color: #111;
+        }
+
+        form {
+            background-color: #d6dbdf;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        label {
+            display: block;
+            margin: 10px 0;
+        }
+
+        input {
+            width: 75%;
+            padding: 10px;
+            margin: 5px 0;
+            border: 1px solid #99a3a4;
+            border-radius: 5px;
+        }
+
+        input[type="submit"] {
+            background-color: #5d6d7e;
+            color: #fff;
+            border: none;
+            padding: 10px 20px; 
+            width: auto;
+            cursor: pointer;
+        }
+
+        button {
+            background-color: #5d6d7e;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            width: auto;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+
+        p {
+            text-align: center;
+            margin: 20px 0;
+        }
+    </style>
+</head>
+<body>
+    <h1>Circle Area Calculator</h1>
+    <form method="post" action="/circle">
+        <label for="radius">Radius:</label>
+        <input type="number" id="radius" name="radius">
+        <input type="submit" value="Calculate Area">
+        <button type="button" onclick="window.location.href='/'">Exit</button>
+    </form>
+    
+    {% if area %}
+    <p>Area of the circle: {{ area }}</p>
+    {% endif %}
+</body>
+</html>

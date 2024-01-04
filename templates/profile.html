@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Profile Information</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #aeb6bf;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        h1 {
+            color: #111;
+            font-size: 27px;
+            margin: 20px 0;
+        }
+
+        img {
+            display: block;
+            margin: 0 auto;
+            max-width: 100%;
+            height: auto;
+            border-radius: 50%;
+        }
+
+        h2 {
+            color: #111;
+            margin: 20px 0;
+        }
+
+        p {
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        strong {
+            font-style: italic;
+        }
+
+        a {
+            display: block;
+            text-align: center;
+            margin: 20px 0;
+            text-decoration: none;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <h1>Ann Denise Ramos Tadeo</h1>
+    <img src="{{ url_for('static', filename='formal_pic.jpeg') }}" alt="Profile Image">
+
+    <h2>About Me</h2>
+    <p>
+        I am a sophomore student majoring in Computer Engineering at the College of Engineering, Department of Computer Engineering, Section 6, at Polytechnic University of the Philippines.
+        This is my subject Data Structure an Algorithms.
+    </p>
+
+    <p>
+        I am a results-driven and analytical Computer Engineering student with a passion for software development, 
+        web development, and computer architecture. I am committed to contributing to the development of emerging technology and innovative software solutions. 
+        My goal is to create visually appealing web experiences and drive advancements in computer engineering. 
+        I am dedicated to continuous learning to deliver exceptional results in a rapidly evolving technology landscape.
+    </p>
+
+    <strong><i>"See wide open spaces when others see boundaries."</i></strong>
+
+    <a href="/">Back to Home</a>
+</body>
+</html>
