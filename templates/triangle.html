@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Triangle Area Calculator</title>
+    <link rel="stylesheet" href="/static/other-style.css">
+</head>
+<body>
+    <section class="triangle-container">
+        <h1>Triangle Area Calculator</h1>
+        <form method="post" action="/triangle">
+            <label for="base">Base:</label>
+            <div class="trinput-container">
+                <input type="number" id="base" name="base" required>
+            </div>
+            
+            <label for="height">Height:</label>
+            <div class="num-container">
+                <input type="number" id="height" name="height" required>
+            </div>
+
+            <button type="submit" value="Calculate Area" class="submit-btn">Calculate</button>
+            <button type="button" onclick="window.location.href='/works'">Exit</button>
+        </form>
+        
+        {% if area %}
+        <p>Area of the triangle is: {{ area }}</p>
+        {% endif %}
+    </section>
+</body>
+</html>

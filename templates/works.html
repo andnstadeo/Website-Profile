@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Work Form</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <section class="work-container">
+        <form method="POST" action="/works">
+            <label for="operation">Choose an operation to perform:</label>
+            <select id="operation" name="operation">
+                <option value="circle">Area of a Circle</option>
+                <option value="triangle">Area of a Triangle</option>
+                <option value="touppercase">Convert String to Uppercase</option>
+            </select>
+            <br>
+            <button type="submit" value="Submit" class="submit-btn">Select</button>
+        </form>
+        <a href="/" class="back-to-home">Back to Home</a>
+    </section>
+</body>
+</html>

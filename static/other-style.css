@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif; 
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    overflow: hidden;
+    background: linear-gradient(to bottom,#ff9bb4, #a6a6db);
+}
+.transparent-btn {
+    padding: 10px;
+    background-color: transparent;
+    color: #000;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    box-shadow: none;
+}
+.transparent-btn:hover {
+    background-color: transparent;
+}
+/*Circle*/
+.circle-container {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.circle-container h1 {
+    font-size: 1.5rem;
+    color: #000;
+    margin-bottom: 10px;
+}
+
+.circle-container form {
+    display: flex;
+    flex-direction: column;
+}
+
+.circle-container label {
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.circle-container .input-container{
+    display: flex;
+    flex-direction: column;
+}
+.circle-container input{
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.circle-container .submit-btn {
+    padding: 10px;
+    background-color: #ff9bb4;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+.circle-container .submit-btn:hover {
+    background-color: #ff9bb4;
+}
+
+.circle-container p {
+    margin-top: 20px;
+    font-size: 1rem;
+    color: #333;
+}
+
+/*Triangle*/
+.triangle-container {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.triangle-container h1 {
+    font-size: 1.5rem;
+    color: #000;
+    margin-bottom: 10px;
+}
+
+.triangle-container form {
+    display: flex;
+    flex-direction: column;
+}
+
+.triangle-container label {
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.triangle-container .input-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.triangle-container input {
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.triangle-container .submit-btn {
+    padding: 10px;
+    background-color: #ff9bb4;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+.triangle-container .submit-btn:hover {
+    background-color: #ff9bb4;
+}
+
+.triangle-container p {
+    margin-top: 20px;
+    font-size: 1rem;
+    color: #333;
+}
+
+/*Uppercase*/
+.upper-container {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.upper-container h1 {
+    font-size: 1.5rem;
+    color: #000;
+    margin-bottom: 10px;
+}
+
+.upper-container form {
+    display: flex;
+    flex-direction: column;
+}
+
+.upper-container label {
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.upper-container input {
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.upper-container .submit-btn {
+    padding: 10px;
+    background-color: #ff9bb4;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+.upper-container .submit-btn:hover {
+    background-color: #ff9bb4; 
+}
+.upper-container p {
+    margin-top: 20px;
+    font-size: 1rem;
+    color: #333;
+}
+

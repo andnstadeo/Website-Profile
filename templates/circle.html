@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Circle Area Calculator</title>
+    <link rel="stylesheet" href="/static/other-style.css">
+</head>
+
+<body>
+    <section class="circle-container">
+        <h1>Circle Area Calculator</h1>
+        <form method="post" action="/circle">
+            <label for="radius">Enter a Radius:</label>
+            <div class="input-container">
+                <input type="number" id="radius" name="radius" required>
+            </div>
+            <button type="submit" class="submit-btn">Calculate</button>
+            <button type="button" onclick="window.location.href='/works'">Exit</button>
+        </form>
+
+        {% if area %}
+        <p>Area of the circle: {{ area }}</p>
+        {% endif %}
+    </section>
+</body>
+
+</html>
