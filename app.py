@@ -50,7 +50,7 @@ def works():
             return redirect(url_for('triangle'))
         elif operation == "circle":
             return redirect(url_for('circle'))
-    return render_template('index.html')
+    return render_template('works.html')
 
 if __name__ == '__main__':
     app.run(debug = True)
